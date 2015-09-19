@@ -13,8 +13,11 @@ hs_err_pid*
 
 #Java用のデフォルトファイルに以下を追加
 .gradle/
+.classpath
+.project
 gradle/
 build/
 gradlew
 gradlew.bat
 gradle-app.setting
+/bin

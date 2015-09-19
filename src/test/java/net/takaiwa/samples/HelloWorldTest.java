@@ -1,3 +1,5 @@
+package net.takaiwa.samples;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -7,9 +9,6 @@ import static org.junit.Assert.*;
  *
  * @author takaiwa.net, @date 15/08/29 18:11
  */
-public class LibraryTest {
-    @Test public void testSomeLibraryMethod() {
-        Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
-    }
+public class HelloWorldTest {
+
 }
