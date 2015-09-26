@@ -19,7 +19,10 @@ task execute(type:JavaExec) {
     systemProperties System.getProperties()
 
     /* Need to split the space-delimited value in the exec.args */
-    args System.getProperty("exec.args").split()
+    def execArgs = System.getProperty("exec.args")
+    if(null != execArgs) {
+        args execArgs.split()
+    }
 }
 
 // In this section you declare where to find the dependencies of your project
