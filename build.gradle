@@ -11,7 +11,16 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-mainClassName = 'net.takaiwa.samples.HelloWorld'
+task execute(type:JavaExec) {
+    main = mainClass
+    classpath = sourceSets.main.runtimeClasspath
+
+    /* Can pass all the properties: */
+    systemProperties System.getProperties()
+
+    /* Need to split the space-delimited value in the exec.args */
+    args System.getProperty("exec.args").split()
+}
 
 // In this section you declare where to find the dependencies of your project
 repositories {
