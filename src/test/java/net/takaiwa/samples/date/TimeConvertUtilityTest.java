@@ -12,7 +12,6 @@ public class TimeConvertUtilityTest {
     public void test() throws Exception {
         // テストデータ
         Calendar cal = Calendar.getInstance();
-
         // テスト
         String ret = TimeConvertUtility.timeToStr(cal);
         // 検証
