@@ -11,6 +11,9 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
+def defaultEncoding = 'UTF-8'
+compileJava.options.encoding = defaultEncoding
+
 task execute(type:JavaExec) {
     main = mainClass
     classpath = sourceSets.main.runtimeClasspath
