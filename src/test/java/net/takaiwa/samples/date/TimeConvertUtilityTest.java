@@ -12,9 +12,10 @@ public class TimeConvertUtilityTest {
     public void test() throws Exception {
         // テストデータ
         Calendar cal = Calendar.getInstance();
+
         // テスト
-        String ret = TimeConvertUtility.timeToStr(cal);
+        String strTime = TimeConvertUtility.timeToStr(cal);
         // 検証
-        assertNotNull(ret);
+        assertNotNull(strTime);
     }
 }
