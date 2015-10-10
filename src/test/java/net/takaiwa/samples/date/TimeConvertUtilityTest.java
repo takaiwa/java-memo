@@ -18,5 +18,4 @@ public class TimeConvertUtilityTest {
         // 検証
         assertNotNull(ret);
     }
-
 }
