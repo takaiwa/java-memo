@@ -1,6 +1,7 @@
 package net.takaiwa.samples.date;
 
-import static org.junit.Assert.assertNotNull;
+import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.MatcherAssert.*;
 
 import java.util.Calendar;
 
@@ -16,6 +17,6 @@ public class TimeConvertUtilityTest {
         // テスト
         String strTime = TimeConvertUtility.timeToStr(cal);
         // 検証
-        assertNotNull(strTime);
+        assertThat(strTime, is(notNullValue()));
     }
 }
